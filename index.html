@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Test form compliance</title>
+</head>
+
+<body>
+
+    
+<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <input name="nama" type="text" placeholder="Nama" required>
+    <input name="pesan" type="text" placeholder="Pesan" required>
+    <button type="submit">Send</button>
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzGT7mjLVMN9eUYnckFZLfjiiryrJYPZsnb9ImooZD4tJ_-MLcapIogwrPK27Y0VLyY/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
