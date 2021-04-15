@@ -1,30 +1,1099 @@
 <html>
 <head>
-    <title>Test form compliance</title>
+
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Form Data Compliance</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="https://getstisla.com/dist/modules/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://getstisla.com/dist/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="https://getstisla.com/dist/css/style.css">
+  <link rel="stylesheet" href="https://getstisla.com/dist/css/components.css">
+
 </head>
 
-<body>
-
-    
 <form name="submit-to-google-sheet">
-    <input name="email" type="email" placeholder="Email" required>
-    <input name="nama" type="text" placeholder="Nama" required>
-    <input name="pesan" type="text" placeholder="Pesan" required>
-    <button type="submit">Send</button>
-  </form>
-  
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzGT7mjLVMN9eUYnckFZLfjiiryrJYPZsnb9ImooZD4tJ_-MLcapIogwrPK27Y0VLyY/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
 
-</body>
+<div class="main-content">
+
+        <div class="row">
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Form Data Compliance - Dea Bakery</h4>
+                  </div>
+                  <div class="card-body">
+                  
+                  <div class="row">
+                      <div class="col-12">
+
+                        <div class="form-group">
+                          <label>Email Auditor</label>
+                          <input name="email" type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                          <label>Outlet</label>
+                          <select class="form-control" name="cabang" required>
+                            <option value="Outlet Kepanjen">Outlet Kepanjen</option>
+                            <option value="Outlet Gondanglegi">Outlet Gondanglegi</option>
+                            <option value="Outlet Turen">Outlet Turen</option>
+                            <option value="Outlet Ketawang">Outlet Ketawang</option>
+                            <option value="Outlet Dampit">Outlet Dampit</option>
+                            <option value="Outlet Dinoyo">Outlet Dinoyo</option>
+                            <option value="Outlet Sawojajar">Outlet Sawojajar</option>
+                            <option value="Outlet Singosari">Outlet Singosari</option>
+                            <option value="Outlet Tumpang">Outlet Tumpang</option>
+                            <option value="Outlet Pandaan">Outlet Pandaan</option>
+                            <option value="Outlet Pasuruan">Outlet Pasuruan</option>
+                            <option value="Outlet Sukun">Outlet Sukun</option>
+                            <option value="Outlet Blitar">Outlet Blitar</option>
+                            <option value="Outlet Batu">Outlet Batu</option>
+                            <option value="Outlet Pujon">Outlet Pujon</option>
+                            <option value="Outlet Probolinggo">Outlet Probolinggo</option>
+                            <option value="Outlet Pakis">Outlet Pakis</option>
+                            <option value="Outlet Ngunut">Outlet Ngunut</option>
+                            <option value="Outlet Bandulan">Outlet Bandulan</option>
+                            <option value="Outlet Pakisaji">Outlet Pakisaji</option>
+                            <option value="Outlet Rungkut">Outlet Rungkut</option>
+                            <option value="Outlet Kawi">Outlet Kawi</option>
+                            <option value="Outlet Payakumbuh">Outlet Payakumbuh</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Nama Penilai</label>
+                          <input name="penilai" type="text" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label>Jam Penilaian</label>
+                          <input name="waktu" type="time" required class="form-control">
+                        </div>
+
+                      <div id="accordion">
+                        <div class="accordion">
+                            <div class="accordion-header" role="button" data-toggle="collapse" data-target="#panel-body-1" aria-expanded="true">
+                            <h4>Solusi</h4>
+                            </div>
+                            <div class="accordion-body collapse show" id="panel-body-1" data-parent="#accordion">
+
+                                <!-- Nomor A1 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A1">Apakah ada tim PJ yang membukakan pintu ?</th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                            <input name="A1" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="A1" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>
+
+                                 <!-- Nomor A2 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A2">Apakah tim PJ menawarkan memberikan baki ?</th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input name="A2" type="radio" value="Ya""required>
+                                                <label>Ya</label>
+                                                <input name="A2" class="padding-left-xs" style="margin-left: 16px !important;" type="radio" required value="Tidak">
+                                                <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>                               
+
+                                 <!-- Nomor A3 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A3">Apakah tim PJ menggali kebutuhan?</th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input name="A3" type="radio" value="Ya"" required>
+                                                <label>Ya</label>
+                                                <input name="A3" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                                <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>
+
+                                 <!-- Nomor A4 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A4">Apakah tim PJ menawarkan solusi sesuai dengan kebutuhan ?</th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input name="A4" type="radio" value="Ya"" required>
+                                                <label>Ya</label>
+                                                <input name="A4" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                                <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>                                
+
+                                 <!-- Nomor A5 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A5">Apakah tim PJ menjalin kedekatan (bonding) </th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input name="A5" type="radio" value="Ya"" required>
+                                                <label>Ya</label>
+                                                <input name="A5" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                                <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>   
+                                
+                                  <!-- Nomor A6 -->
+                                  <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A6">Apakah menawarkan produk lain selain yg dibeli (upselling) </th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input name="A6" type="radio" value="Ya"" required>
+                                                <label>Ya</label>
+                                                <input name="A6" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                                <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>                                
+
+                                  <!-- Nomor A7 -->
+                                  <table class="table table-bordered table-md text-center">
+
+                                    <th class="img-fluid" data-toggle="modal" data-target="#A7">Tim PJ memahami product knowledge </th>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <input name="A7" type="radio" value="Ya"" required>
+                                                <label>Ya</label>
+                                                <input name="A7" type="radio" required value="Tidak"  class="padding-left-xs" style="margin-left: 16px !important;">
+                                                <label>Tidak</label>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                </table>                                    
+
+                            </div>
+                        </div>
+
+                        <!-- Modal untuk compliance -->
+                        <div id="A1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Apakah ada tim PJ yang membukakan pintu ? </label>
+                                    <input name="AA1" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="A2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Apakah tim PJ menawarkan memberikan baki ? </label>
+                                    <input name="AA2" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                          
+                        <div id="A3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Apakah tim PJ menggali kebutuhan  </label>
+                                    <input name="AA3" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div id="A4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Apakah tim PJ menawarkan solusi sesuai dengan kebutuhan ? </label>
+                                    <input name="AA4" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div id="A5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Apakah tim PJ menjalin kedekatan (bonding)  </label>
+                                    <input name="AA5" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div id="A6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Apakah menawarkan produk lain selain yg dibeli (upselling)  </label>
+                                    <input name="AA6" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div id="A7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                
+                                
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="modal-content">
+                                <div class="modal-body">
+                                    <label>Tim PJ memahami product knowledge  </label>
+                                    <input name="AA7" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                                </div>
+                                <div class="modal-footer bg-whitesmoke br">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>                        
+                      
+                      <div class="accordion">
+                        <div class="accordion-header" role="button" data-toggle="collapse" data-target="#panel-body-2">
+                          <h4>Ramah</h4>
+                        </div>
+                        <div class="accordion-body collapse" id="panel-body-2" data-parent="#accordion">
+                                <!-- Nomor B1 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#B1">Apakah PJ menyambut pelanggan pada saat masuk toko ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="B1" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="B1" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>
+
+                                 <!-- Nomor B2 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#B2">Apakah PJ menyambut pelanggan dengan ramah, berbicara dengan senyum dan mata PJ menatap mata pelanggan?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="B2" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="B2" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>
+                              
+                                 <!-- Nomor B3 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#B3">Apakah PJ melakukan salam perpisahan dengan merapatkan kedua belah tangan didepan dada?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="B3" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="B3" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>       
+                              
+                                 <!-- Nomor B4 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#B4">Apakah semua karyawan yang sedang bekerja kelihatan ramah?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="B4" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="B4" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table> 
+                              
+                                 <!-- Nomor B5 -->
+                                 <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#B5">Tim PJ tidak mengobrol dengan rekan nya</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="B5" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="B5" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>                                       
+                        </div>
+                      </div>
+
+                        <!-- Modal untuk compliance -->
+                        <div id="B1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah PJ menyambut pelanggan pada saat masuk toko ?  </label>
+                                  <input name="BB1" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div> 
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="B2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah PJ menyambut pelanggan dengan ramah, berbicara dengan senyum dan mata PJ menatap mata pelanggan </label>
+                                  <input name="BB2" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="B3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah PJ melakukan salam perpisahan dengan merapatkan kedua belah tangan didepan dada </label>
+                                  <input name="BB3" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                      
+
+                        <!-- Modal untuk compliance -->
+                        <div id="B4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah semua karyawan yang sedang bekerja kelihatan ramah </label>
+                                  <input name="BB4" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                      
+
+                        <!-- Modal untuk compliance -->
+                        <div id="B5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Tim PJ tidak mengobrol dengan rekan nya  </label>
+                                  <input name="BB5" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                      
+
+                      <div class="accordion">
+                        <div class="accordion-header" role="button" data-toggle="collapse" data-target="#panel-body-3">
+                          <h4>Area Menunggu Pelanggan &<br><br>Display Outlet</h4>
+                        </div>
+                        <div class="accordion-body collapse" id="panel-body-3" data-parent="#accordion">
+                                <!-- Nomor C1 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#C1">Apakah tidak ada tisue atau sampah lainnya di area ini  ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="C1" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="C1" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>
+
+                                <!-- Nomor C2 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#C2">Apakah kursi-kursi masih dalam keadaan baik  ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="C2" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="C2" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>  
+                              
+                                <!-- Nomor C3 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#C3">Apakah kursi-kursi cukup untuk menampung pelanggan yang sedang menunggu  ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="C3" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="C3" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table> 
+                              
+                                <!-- Nomor C4 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#C4">Apakah tempat penyimpanan barang sudah rapih dan memenuhi standar first in first out (barang yang datang duluan dipergunakan terlebih dahulu) ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="C4" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="C4" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>   
+                              
+                              <!-- Nomor C5 -->
+                              <table class="table table-bordered table-md text-center">
+
+                                <th class="img-fluid" data-toggle="modal" data-target="#C5">Apakah stok sudah per kategori ?</th>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                          <input name="C5" type="radio" value="Ya"" required>
+                                          <label>Ya</label>
+                                          <input name="C5" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                          <label>Tidak</label>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table> 
+                            
+                              <!-- Nomor C6 -->
+                              <table class="table table-bordered table-md text-center">
+
+                                <th class="img-fluid" data-toggle="modal" data-target="#C6">Apakah lantai bersih dan tidak basah ?</th>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                          <input name="C6" type="radio" value="Ya"" required>
+                                          <label>Ya</label>
+                                          <input name="C6" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                          <label>Tidak</label>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table>                                
+                        </div>
+                      </div>
+
+                        <!-- Modal untuk compliance -->
+                        <div id="C1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah tidak ada tisue atau sampah lainnya di area ini  </label>
+                                  <input name="CC1" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                     
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="C2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah kursi-kursi masih dalam keadaan baik </label>
+                                  <input name="CC2" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="C3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah kursi-kursi cukup untuk menampung pelanggan yang sedang menunggu </label>
+                                  <input name="CC3" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                       
+
+                        <!-- Modal untuk compliance -->
+                        <div id="C4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah tempat penyimpanan barang sudah rapih dan memenuhi standar FIFO? </label>
+                                  <input name="CC4" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>       
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="C5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah stok sudah per kategori  </label>
+                                  <input name="CC5" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                      
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="C6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah lantai bersih dan tidak basah </label>
+                                  <input name="CC6" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                       
+
+                      <div class="accordion">
+                        <div class="accordion-header" role="button" data-toggle="collapse" data-target="#panel-body-4">
+                          <h4>Penampilan</h4>
+                        </div>
+                        <div class="accordion-body collapse" id="panel-body-4" data-parent="#accordion">
+                                <!-- Nomor D1 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#D1">Apakah sikap tubuh PJ  dalam keadaan tegap  ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="D1" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="D1" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>
+
+                                <!-- Nomor D2 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#D2">Apakah memakai seragam yang telah ditentukan?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="D2" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="D2" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table> 
+                              
+                                <!-- Nomor D3 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#D3">Apakah bersepatu dan berkaos kaki ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="D3" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="D3" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table> 
+                              
+                                <!-- Nomor D4 -->
+                                <table class="table table-bordered table-md text-center">
+
+                                  <th class="img-fluid" data-toggle="modal" data-target="#D4">Apakah rambut pendek dan muka dalam keadaan bersih dan rapih ?</th>
+                                  <tr>
+                                      <td class="text-center">
+                                          <div class="form-check">
+                                            <input name="D4" type="radio" value="Ya"" required>
+                                            <label>Ya</label>
+                                            <input name="D4" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                            <label>Tidak</label>
+                                      </div>
+                                  </td>
+                                  </tr>
+                              </table>                                 
+                        </div>
+                      </div>
+
+                        <!-- Modal untuk compliance -->
+                        <div id="D1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah sikap tubuh PJ  dalam keadaan tegap </label>
+                                  <input name="DD1" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="D2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah memakai seragam yang telah ditentukan </label>
+                                  <input name="DD2" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>  
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="D3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah bersepatu dan berkaos kaki  </label>
+                                  <input name="DD3" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div> 
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="D4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah rambut pendek dan muka dalam keadaan bersih dan rapih </label>
+                                  <input name="DD4" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                      
+
+                      <div class="accordion">
+                        <div class="accordion-header" role="button" data-toggle="collapse" data-target="#panel-body-5">
+                          <h4>Quality</h4>
+                        </div>
+                        <div class="accordion-body collapse" id="panel-body-5" data-parent="#accordion">
+                              <!-- Nomor E1 -->
+                              <table class="table table-bordered table-md text-center">
+
+                                <th class="img-fluid" data-toggle="modal" data-target="#E1">Apakah PJ menyebutkan kembali jumlah roti yang dibeli ?</th>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                          <input name="E1" type="radio" value="Ya"" required>
+                                          <label>Ya</label>
+                                          <input name="E1" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                          <label>Tidak</label>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table>    
+
+                              <!-- Nomor E2 -->
+                              <table class="table table-bordered table-md text-center">
+
+                                <th class="img-fluid" data-toggle="modal" data-target="#E2">Apakah produk yang diterima dalam keadaan baik (expired, dan tampilan ?)</th>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                          <input name="E2" type="radio" value="Ya"" required>
+                                          <label>Ya</label>
+                                          <input name="E2" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                          <label>Tidak</label>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table>                             
+                        </div>
+                      </div>
+
+                        <!-- Modal untuk compliance -->
+                        <div id="E1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah PJ menyebutkan kembali jumlah roti yang dibeli ? </label>
+                                  <input name="EE1" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>    
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="E2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah produk yang diterima dalam keadaan baik (expired, dan tampilan ?) </label>
+                                  <input name="EE2" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                        
+
+                      <div class="accordion">
+                        <div class="accordion-header" role="button" data-toggle="collapse" data-target="#panel-body-6">
+                          <h4>Kasir</h4>
+                        </div>
+                        <div class="accordion-body collapse" id="panel-body-6" data-parent="#accordion">
+                              <!-- Nomor F1 -->
+                              <table class="table table-bordered table-md text-center">
+
+                                <th class="img-fluid" data-toggle="modal" data-target="#F1">Apakah PJ menyebutkan kembali jumlah roti yang dibeli ?</th>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                          <input name="F1" type="radio" value="Ya"" required>
+                                          <label>Ya</label>
+                                          <input name="F1" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                          <label>Tidak</label>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table>    
+
+                              <!-- Nomor F2 -->
+                              <table class="table table-bordered table-md text-center">
+
+                                <th class="img-fluid" data-toggle="modal" data-target="#F2">Kecepatan kasir maksimal 5 menit </th>
+                                <tr>
+                                    <td class="text-center">
+                                        <div class="form-check">
+                                          <input name="F2" type="radio" value="Ya"" required>
+                                          <label>Ya</label>
+                                          <input name="F2" type="radio" required value="Tidak" class="padding-left-xs" style="margin-left: 16px !important;">
+                                          <label>Tidak</label>
+                                    </div>
+                                </td>
+                                </tr>
+                            </table>  
+                        </div>
+                      </div>
+
+                        <!-- Modal untuk compliance -->
+                        <div id="F1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Apakah PJ menyebutkan kembali jumlah roti yang dibeli ?</label>
+                                  <input name="FF1" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>    
+                      
+                        <!-- Modal untuk compliance -->
+                        <div id="F2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              
+                              
+                              <span aria-hidden="true">&times;</span>
+                              </button>
+                              <div class="modal-content">
+                              <div class="modal-body">
+                                  <label>Kecepatan kasir maksimal 5 menit </label>
+                                  <input name="FF2" type="text" placeholder="Silahkan masukkan catatan disini" class="form-control">                                  
+                              </div>
+                              <div class="modal-footer bg-whitesmoke br">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>                          
+
+                      <div class="col-xs-12">
+                          <div class="text-right">
+                            <input type="submit" name="submit" value="Selesai" class="btn btn-primary">
+                          </div>
+                        </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwq-8jFV3qVGWL0I0hiIQGluXVWHjtxVyfMfOboMd-Y0nxtSwlUbyREtdNB_HwDes08iQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          // Ketika tombol diklik tombol sapmit kwk
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert('Data telah kami terima!'))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+        
+        <!-- General JS Scripts -->
+      <script src="https://getstisla.com/dist/modules/jquery.min.js"></script>
+      <script src="https://getstisla.com/dist/modules/bootstrap/js/bootstrap.min.js"></script>
+      <script src="https://getstisla.com/dist/modules/nicescroll/jquery.nicescroll.min.js"></script>
+      <script src="https://getstisla.com/dist/modules/moment.min.js"></script>
+      <script src="https://getstisla.com/dist/js/stisla.js"></script>
+      
+      <!-- JS Libraies -->
+    
+      <!-- Page Specific JS File -->
+      
+      <!-- Template JS File -->
+      <script src="https://getstisla.com/dist/js/scripts.js"></script>
+      <script src="https://getstisla.com/dist/js/custom.js"></script>
+    
+    </body>
 
 </html>
