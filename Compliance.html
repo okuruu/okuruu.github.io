@@ -2568,7 +2568,31 @@
                 // tampilin alert
                 myAlert.classList.toggle('d-none');
                 // reset formmmm
-                form.reset();            
+                form.reset();
+
+                let telegram_bot_id = '1699852366:AAG11rfHi-BN2MMRSQ7mvDmsh8mieqqld7Y';
+                let chat_id = '1014289362';
+                let message = 'Emo';
+                
+                var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.telegram.org/" + telegram_bot_id + "/sendMessage",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "cache-control": "no-cache"
+                },
+                "data": JSON.stringify({
+                    "chat_id": chat_id,
+                    "text": message
+                })
+                }
+
+                $.ajax(settings).done(function (response) {
+                console.log(response);
+                }); 
+                
             })
             .catch(error => console.error('Error!', error.message))
         })
