@@ -16,20 +16,26 @@
   <link rel="stylesheet" href="https://getstisla.com/dist/css/style.css">
   <link rel="stylesheet" href="https://getstisla.com/dist/css/components.css">
 
+  <!-- Fonts? Yeaawww!! -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+  <style>
+      .lato {
+            font-family: 'Lato', sans-serif;
+        }
+  </style>
+
 </head>
 
-<form name="submit-to-google-sheet">
-
+<form name="submit-to-google-sheet" >
 <div class="main-content">
 
-        <div class="row">
+        <div class="row shadow">
               <div class="col-12">
                 <div class="card">
                     <center><img src="https://okuruu.github.io/logo_university.png" width="200" height="200" /></center>
-                  <div class="card-header">
-                      
-                    <h4>Survey Form - Dea University</h4>
-                  </div>
+                    <h5 class="text-center">Survey Form - Dea University</h5>
+
                   <div class="card-body">
                   
                   <div class="row">
@@ -38,23 +44,66 @@
                         <!-- Nomor A1 -->
                         <table class="table table-bordered table-md text-center">
 
-                            <th class="img-fluid" data-toggle="modal" data-target="#A1">A1. Pemahaman saya atas materi training ini </th>
+                            <th class="text-center lato" data-toggle="modal" data-target="#A1">A1. Pemahaman saya tentang materi ini? </th>
                             <tr>
                                 <td class="text-center">
-                                    <input type="range" class="form-control" min="0" max="5" id="customRange2" onchange="updateTextInputA1(this.value);">
-                                    <input type="text" name="A1A" id="textInputA1" value="3" class="form-control" readonly>
-                            </td>
+                                    <!-- <input type="range" class="form-control" min="0" max="5" id="customRange2" onchange="updateTextInputA1(this.value);">
+                                    <input type="text" name="A1A" id="textInputA1" value="3" class="form-control" readonly> -->
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A1A" id="inlineRadio1" value="1" >
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A1A" id="inlineRadio2" value="2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A1A" id="inlineRadio3" value="3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A1A" id="inlineRadio4" value="4">
+                                        <label class="form-check-label" for="inlineRadio1">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A1A" id="inlineRadio5" value="5">
+                                        <label class="form-check-label" for="inlineRadio1">5</label>
+                                    </div> 
+
+                                </td>
                             </tr>
                         </table>
 
                             <!-- Nomor A2 -->
                             <table class="table table-bordered table-md text-center">
 
-                            <th class="img-fluid" data-toggle="modal" data-target="#A2">A2. Materi sesuai dengan kebutuhan?</th>
+                            <th class="text-center lato" data-toggle="modal" data-target="#A2">A2. Cara Penyampaian dari Pemateri?</th>
                             <tr>
                                 <td class="text-center">
-                                    <input type="range" class="form-control" min="0" max="5" id="customRange2" onchange="updateTextInputA2(this.value);">
-                                    <input type="text" name="A2A" id="textInputA2" value="3" class="form-control" readonly> 
+                                    <!-- <input type="range" class="form-control" min="0" max="5" id="customRange2" onchange="updateTextInputA2(this.value);">
+                                    <input type="text" name="A2A" id="textInputA2" value="3" class="form-control" readonly>  -->
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A2A" id="inlineRadio1" value="1" >
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A2A" id="inlineRadio2" value="2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A2A" id="inlineRadio3" value="3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A2A" id="inlineRadio4" value="4">
+                                        <label class="form-check-label" for="inlineRadio1">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A2A" id="inlineRadio5" value="5">
+                                        <label class="form-check-label" for="inlineRadio1">5</label>
+                                    </div> 
+
                             </td>
                             </tr>
                         </table>    
@@ -62,29 +111,51 @@
                             <!-- Nomor A3 -->
                             <table class="table table-bordered table-md text-center">
 
-                            <th class="img-fluid" data-toggle="modal" data-target="#A3">A3. Metode ini membantu dalam proses belajar ?</th>
+                            <th class="text-center lato" data-toggle="modal" data-target="#A3">A3. Materi ini sesuai dengan kebutuhan kerja?</th>
                             <tr>
                                 <td class="text-center">
-                                    <input type="range" class="form-control" min="0" max="5" id="customRange2" onchange="updateTextInputA3(this.value);">
-                                    <input type="text" name="A3A" id="textInputA3" value="3" class="form-control" readonly> 
+                                    <!-- <input type="range" class="form-control" min="0" max="5" id="customRange2" onchange="updateTextInputA3(this.value);">
+                                    <input type="text" name="A3A" id="textInputA3" value="3" class="form-control" readonly>  -->
+
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A3A" id="inlineRadio1" value="1" >
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A3A" id="inlineRadio2" value="2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A3A" id="inlineRadio3" value="3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A3A" id="inlineRadio4" value="4">
+                                        <label class="form-check-label" for="inlineRadio1">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input ml-2" type="radio" name="A3A" id="inlineRadio5" value="5">
+                                        <label class="form-check-label" for="inlineRadio1">5</label>
+                                    </div>                                     
+
                             </td>
                             </tr>
                         </table>  
 
                         <div class="form-group">
-                          <label>Saran metode teknis kelas BBP Dea University?</label>
-                          <input name="pertanyaan1" type="text" class="form-control">
+                          <label class="lato">Saran untuk Pemateri..</label>
+                          <input name="pertanyaan1" type="text" class="form-control" placeholder="Contoh: Materinya sangat bagus dan relevan">
                         </div>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label>Saran materi yang perlu dibahas (di luar kurikulum yang sudah ada)?</label>
                             <input name="pertanyaan2" type="text" class="form-control">
-                          </div>                        
+                        </div>                         -->
 
 
                       <div class="col-xs-12">
                           <div class="text-right">
-                            <input type="submit" name="submit" value="Selesai" class="btn btn-primary btn-kirim">
+                            <input type="submit" name="submit" value="Selesai" class="form-control btn-danger btn-kirim">
                             
                             <button class="btn btn-primary btn-progress btn-loading d-none" type="button" disabled>
                                 Loading...
@@ -176,3 +247,4 @@
     </body>
 
 </html>
+
