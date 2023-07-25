@@ -81,7 +81,6 @@ h4{
 
 .card-body {
     overflow-wrap: break-word !important;
-<<<<<<< HEAD
 }
 
 .center-screen-text{
@@ -90,6 +89,4 @@ h4{
     left: 55%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-=======
->>>>>>> origin/main
 }
