@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<link rel="style" type="text/css" href="./plugins.bundle.css" />
+		<link rel="stylesheet" type="text/css" href="./style.bundle.css" />
+		<link rel="stylesheet" type="text/css" href="./app.css" />
+		
+		<link href="./_app/immutable/assets/Toaster.3a6d0da3.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.d89a4163.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.1b9dbb88.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.26b7b890.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.ad9736a5.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.ed6eec28.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.6905784e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c26d52c7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.15a74522.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.e2e79347.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.ca5d9d38.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Navbar.c6b00622.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Toaster.fdcdf509.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/formatter.7f203817.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/baseConfiguration.5e457b69.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" style="background-color: #f3f6f9;">
+		<div class="container-fluid">
+			<div style="display: contents">  <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm" data-svelte-h="svelte-qavazg"><div class="container"><a class="navbar-brand" href="/okuruu.github.io/master-produk"><img src="/okuruu.github.io/flatIcons.jpg" class="lozad" alt="Logo Om Alul" height="15"> </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button> <div class="collapse navbar-collapse" id="navbarScroll"><ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll fw-bolder" style="--bs-scroll-height: 100px;"><li class="nav-item"><a class="nav-link text-dark" aria-current="page" href="/okuruu.github.io/checkout">Penjualan</a></li> <li class="nav-item"><a class="nav-link text-dark" href="/okuruu.github.io/master-produk">Master Produk</a></li> <li class="nav-item"><a class="nav-link text-dark" href="/okuruu.github.io/analisa">Analisa</a></li> <li class="nav-item"><a class="nav-link text-dark" href="/okuruu.github.io/katalog">Katalog</a></li></ul></div></div></nav> <div class="separator my-10"></div> <div class="toaster  svelte-1phplh9" role="alert"> </div>  <div class="card shadow-sm my-5"><div class="card-header" data-svelte-h="svelte-agcerg"><h3 class="card-title fw-bolder">Master Produk: All Item</h3> <div class="card-toolbar"><div class="me-2"><button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#showInput">Item Baru</button></div></div></div> <div class="card-body"><div class="form-group mb-5"><label for="searchItem" class="form-label fw-bolder" data-svelte-h="svelte-4eqs94">Cari Item Master Produk</label> <input type="text" class="form-control w-25" placeholder="Cari Item..."></div> <div class="table-responsive"><table class="table table-row-dashed table-row-gray-300 gy-2 table-hover align-middle text-center text-dark"><thead data-svelte-h="svelte-28959w"><tr class="fw-bold"><th>#</th> <th>Nama Item</th> <th>Stok</th> <th>Tipe Item</th> <th>Status Jual</th> <th>Nama Distributor</th> <th>Harga Produk (Dari Pabrik)</th> <th>Harga Jual Produk (Untuk Toko)</th> <th>Action</th></tr></thead> <tbody></tbody></table></div></div></div>  <div class="modal fade" tabindex="-1" id="showInput"><div class="modal-dialog modal-xl"><div class="modal-content"><div class="modal-header" data-svelte-h="svelte-1kcqcxu"><h3 class="modal-title">Master Produk: Input Data</h3> <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">X</div></div> <form><div class="modal-body"><div class="row mb-4"><div class="col"><label for="namaProduk" class="form-label fw-bold" data-svelte-h="svelte-r119ct">Nama Item</label> <input type="text" class="form-control" placeholder="Nama Item" required></div> <div class="col"><label for="hargaProduk" class="form-label fw-bold" data-svelte-h="svelte-nnh1r9">Stok Item</label> <input type="number" class="form-control" placeholder="Jumlah Stok" required></div></div> <div class="row mb-4"><div class="col"><label for="hargaProduk" class="form-label fw-bold" data-svelte-h="svelte-1w8tq5t">Harga Produk (Dari Pabrik)</label> <input type="number" class="form-control" placeholder="Rp. 0,00-" required></div> <div class="col"><label for="hargaProduk" class="form-label fw-bold" data-svelte-h="svelte-w10evw">Harga Jual Produk (Untuk Toko)</label> <input type="number" class="form-control" placeholder="Rp. 0,00-" required></div></div> <div class="row mb-4"><div class="col"><label for="namaProduk" class="form-label fw-bold" data-svelte-h="svelte-8avwdk">Pilih Tipe Item</label> <select class="form-select" required><option value="" selected data-svelte-h="svelte-1spj51b">Pilih salah satu</option><option value="Pieces" data-svelte-h="svelte-1rkw9h6">Pieces</option><option value="Jasa" data-svelte-h="svelte-h7ipci">Jasa</option><option value="Biaya" data-svelte-h="svelte-1apqa7q">Biaya</option><option value="Varian" data-svelte-h="svelte-4rhqli">Varian</option></select></div> <div class="col"><label for="statusItem" class="form-label fw-bold" data-svelte-h="svelte-17ivzyu">Status Jual</label> <select class="form-select" required><option value="" selected data-svelte-h="svelte-1spj51b">Pilih salah satu</option><option value="Katalog dan Penjualan" data-svelte-h="svelte-18ijfu3">Aktif, Muncul di Katalog &amp; Penjualan</option><option value="Penjualan" data-svelte-h="svelte-czlscr">Aktif, Muncul di Penjualan saja</option><option value="Tidak Aktif" data-svelte-h="svelte-1f3xb0u">Tidak aktif di Katalog &amp; Penjualan</option></select></div> <div class="col"><label for="namaDistributor" class="form-label fw-bold" data-svelte-h="svelte-wxqow1">Nama Distributor</label> <input type="text" class="form-control" placeholder="Cth: PT. Sumber Agung Bader Mas" required></div></div> <div class="form-group"><label for="deskripsiProduk" class="form-label fw-bold" data-svelte-h="svelte-ipez81">Deskripsi Produk</label> <textarea class="form-control" rows="5" placeholder="Deskripsi Produk" required></textarea></div></div> <div class="modal-footer" data-svelte-h="svelte-2kc8jh"><button type="reset" class="btn btn-light" data-bs-dismiss="modal">Tutup</button> <button type="submit" class="btn btn-primary">Simpan Item</button></div></form></div></div></div>  <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" id="showEdit" aria-hidden="true"><div class="modal-dialog modal-xl"><div class="modal-content"><div class="modal-header"><h3 class="modal-title" data-svelte-h="svelte-nbc6p6">Master Produk: Edit Data</h3> <button type="button" class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close" data-svelte-h="svelte-6pz60k">X</button></div> <div class="modal-body"><form><div class="row mb-4"><div class="col"><label for="namaProduk" class="form-label fw-bold" data-svelte-h="svelte-r119ct">Nama Item</label> <input type="text" class="form-control" placeholder="Nama Item" required></div> <div class="col"><label for="hargaProduk" class="form-label fw-bold" data-svelte-h="svelte-nnh1r9">Stok Item</label> <input type="number" class="form-control" placeholder="Jumlah Stok" required></div></div> <div class="row mb-4"><div class="col"><label for="hargaProduk" class="form-label fw-bold" data-svelte-h="svelte-1w8tq5t">Harga Produk (Dari Pabrik)</label> <input type="number" class="form-control" placeholder="Rp. 0,00-" required></div> <div class="col"><label for="hargaProduk" class="form-label fw-bold" data-svelte-h="svelte-w10evw">Harga Jual Produk (Untuk Toko)</label> <input type="number" class="form-control" placeholder="Rp. 0,00-" required></div></div> <div class="row mb-4"><div class="col"><label for="namaProduk" class="form-label fw-bold" data-svelte-h="svelte-8avwdk">Pilih Tipe Item</label> <select class="form-select" required><option value="" selected data-svelte-h="svelte-1spj51b">Pilih salah satu</option><option value="Pieces" data-svelte-h="svelte-1rkw9h6">Pieces</option><option value="Jasa" data-svelte-h="svelte-h7ipci">Jasa</option><option value="Biaya" data-svelte-h="svelte-1apqa7q">Biaya</option><option value="Varian" data-svelte-h="svelte-4rhqli">Varian</option></select></div> <div class="col"><label for="statusItem" class="form-label fw-bold" data-svelte-h="svelte-17ivzyu">Status Jual</label> <select class="form-select" required><option value="" selected data-svelte-h="svelte-1spj51b">Pilih salah satu</option><option value="Katalog dan Penjualan" data-svelte-h="svelte-18ijfu3">Aktif, Muncul di Katalog &amp; Penjualan</option><option value="Penjualan" data-svelte-h="svelte-czlscr">Aktif, Muncul di Penjualan saja</option><option value="Tidak Aktif" data-svelte-h="svelte-1f3xb0u">Tidak aktif di Katalog &amp; Penjualan</option></select></div> <div class="col"><label for="namaDistributor" class="form-label fw-bold" data-svelte-h="svelte-wxqow1">Nama Distributor</label> <input type="text" class="form-control" placeholder="Cth: PT. Sumber Agung Bader Mas" required></div></div> <div class="form-group"><label for="deskripsiProduk" class="form-label fw-bold" data-svelte-h="svelte-ipez81">Deskripsi Produk</label> <textarea class="form-control" rows="5" placeholder="Deskripsi Produk" required></textarea></div> <button type="submit" class="btn btn-primary w-100 my-2" data-svelte-h="svelte-q0xk4i">Simpan Item</button></form></div> <div class="modal-footer"><button type="reset" class="btn btn-light" data-bs-dismiss="modal" data-svelte-h="svelte-8od2">Tutup</button></div></div></div></div>  <div class="modal fade" tabindex="-1" id="promptDelete"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h3 class="modal-title" data-svelte-h="svelte-xjajfm">Master Produk: Konfirmasi Hapus</h3> <button type="button" class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close" data-svelte-h="svelte-zd6gia">X</button></div> <div class="modal-body" data-svelte-h="svelte-dnfoi3"><p>Apakah anda akan menghapus item ini?</p></div> <div class="modal-footer"><button type="button" data-bs-dismiss="modal" class="btn btn-danger" data-svelte-h="svelte-dlkkjg">Hapus</button> <button type="button" data-bs-dismiss="modal" class="btn btn-secondary" data-svelte-h="svelte-1trnvqt">Tutup</button></div></div></div></div>  
+			
+			<script>
+				{
+					__sveltekit_1xm994j = {
+						assets: "/okuruu.github.io",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.d89a4163.js"),
+						import("./_app/immutable/entry/app.6905784e.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+		</div>
+		<script src="./plugins.bundle.js"></script>
+	</body>
+</html>
