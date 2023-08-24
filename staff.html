@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
+		<link rel="style" type="text/css" href="./plugins.bundle.css" />
+		<link rel="stylesheet" type="text/css" href="./style.bundle.css" />
+		<link rel="stylesheet" type="text/css" href="./app.css" />
+		
+		<link href="./_app/immutable/assets/Toaster.3a6d0da3.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.0048bc85.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.4c92a8b0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.0ae47f94.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.e8428303.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.581b5851.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.0009e820.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.39a7fe6d.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.8b83585e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/8.36c7319b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Penjualan.c5676835.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/each.40011beb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/Toaster.82ed8b67.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/formatter.7f203817.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/baseConfiguration.5e457b69.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" style="background-color: #f3f6f9;">
+		<div class="container-fluid">
+			<div style="display: contents">  <div class="my-7"><div class="toaster  svelte-1phplh9" role="alert"> </div> <div class="card shadow-sm"><div class="card-body"><div class="row"><div class="col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9"><div class="row"><div class="col"><label for="inputSearch" class="form-label fw-bold" data-svelte-h="svelte-1wip1zm">Cari Nama Produk</label> <input type="text" class="form-control form-control-sm" placeholder="Nama Produk"></div> <div class="col"><label for="pilihMember" class="form-label fw-bold" data-svelte-h="svelte-3ac58f">Pilih Member</label> <select class="form-select form-select-sm"><option value="UMUM" selected data-svelte-h="svelte-1t951qf">UMUM</option> <option value="" disabled data-svelte-h="svelte-1u0495k">UMUM</option> </select></div></div> <div class="separator my-5"></div> <div class="overflow-auto" style="height: 50vh;"><div class="table-responsive"><table class="table table-row-dashed table-row-gray-300 gy-2 table-hover align-middle text-center text-dark"><thead data-svelte-h="svelte-ebivoy"><tr class="fw-bold"><th>#</th> <th>Nama Item</th> <th>Stok</th> <th class="fw-bolder text-danger">Harga Item (Pabrik)</th> <th class="fw-bolder text-info">Harga Item (Jual)</th> <th>Potongan (Rp)</th> <th>Potongan (%)</th> <th>Action</th></tr></thead> <tbody></tbody></table></div></div></div> <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"><div class="border border-primary rounded-1 d-flex align-items-center justify-content-end"><h1 class="display-6 text-dea me-3 m-2">Rp 0</h1></div> <div class="overflow-auto" style="height: 50vh;"><div class="table-responsive"><table class="table table-row-dashed table-row-gray-300 gy-2 table-hover align-middle text-dark"><thead data-svelte-h="svelte-1bwqcsq"><tr class="fw-bolder"><th class="w-50">Nama Item</th> <td class="w-25 text-center">Jumlah</td> <th class="w-25">Hapus</th></tr></thead> <tbody></tbody></table></div></div> <div class="separator my-5"></div> <div class="row"><div class="col"><label for="inputDP" class="form-label fw-bold" data-svelte-h="svelte-1sfqyfz">DP</label> <input type="number" class="form-control form-control-sm" placeholder="Rp. 0,00-"></div> <div class="col"><label for="inputTunai" class="form-label fw-bold" data-svelte-h="svelte-luqnlt">Tunai</label> <input type="number" class="form-control form-control-sm" placeholder="Rp. 0,00-"></div></div> <div class="my-3"><label for="dpBerjangka" class="form-label fw-bold" data-svelte-h="svelte-647j3b">Jatuh Tempo (Opsional)</label> <input type="date" class="form-control form-control-sm"></div> <div class="my-3"><label for="keterangan" class="form-label fw-bold" data-svelte-h="svelte-1xledw5">Keterangan</label> <textarea class="form-control" placeholder="Masukkan Keterangan"></textarea></div> <button type="button" class="btn btn-sm btn-primary w-100" ><img src="/okuruu.github.io/icons/save.svg" alt="Simpan Semua" height="20">
+                    Simpan Transaksi</button></div></div></div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_gx0c47 = {
+						assets: "/okuruu.github.io",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.0048bc85.js"),
+						import("./_app/immutable/entry/app.0009e820.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 8],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+		</div>
+		<script src="./plugins.bundle.js"></script>
+	</body>
+</html>
