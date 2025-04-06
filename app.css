@@ -522,45 +522,6 @@ ul li a.active svg {
     }
 }
 
-@media screen and (max-height: 850px) {
-    section#event {
-        height: 100%;
-    }
-}
-
-@media screen and (max-height: 815px) {
-    section#event {
-        height: 100%;
-    }
-}
-
-@media screen and (max-height: 815px) {
-    section#event {
-        height: 100%;
-    }
-}
-
-@media screen and (max-height: 670px) {
-    section#event {
-        height: 100%;
-    }
-    #letter {
-        padding-bottom: 30%;
-    }
-}
-
-@media screen and (max-height: 670px) {
-    section#event {
-        height: 100%;
-    }
-}
-
-@media screen and (max-height: 555px) {
-    section#event {
-        height: 100%;
-    }
-}
-
 @media screen and (max-height: 445px) {
     .surah {
         height: 100%;
