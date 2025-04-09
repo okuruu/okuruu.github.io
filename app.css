@@ -627,7 +627,7 @@ ul li a.active svg {
 }
   
 .bg-burgundy {
-    background-color: #58090E;
+    background-color: #3C0008;
 }
 
 .coverImage {
@@ -638,7 +638,7 @@ ul li a.active svg {
 .coverFooter {
     background:url(/images/burgundy-frame-with-background-text.webp) center no-repeat; 
     background-size: contain;
-    background-color: #58090E;
+    background-color: #3C0008;
 }
 
 .hideOpening {
